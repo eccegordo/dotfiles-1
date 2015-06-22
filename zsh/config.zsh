@@ -1,3 +1,17 @@
+echo "hello gordon would you like to play a game";
+
+source ~/.nvm/nvm.sh
+
+# nvm use 0.11.14
+# nvm use 0.10.32
+nvm use iojs
+
+export NVM_DIR="/Users/gordonpotter/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+
 if [[ -n $SSH_CONNECTION ]]; then
   export PS1='%m:%3~$(git_info_for_prompt)%# '
 else
